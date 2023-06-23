@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    </html>
+    <h1>FORMS</h1>
+    <h2>TYPE OF INPUTS</h2>
+    <ol>
+       <li> Button</li>
+       <form>
+             <input type="button" value="click me to subscribe"/> <br>
+             <input type="button" value="select me" accesskey="s"/> <br>
+             <fieldset>
+                <legend>Select your preferred option</legend>   
+                <input type="button" value="Option 1"/>
+                    <input type="button" value="Option 2"/>
+                    <input type="button" value="option 3"/>
+             </fieldset>
+     </form>
+ <li>checkbox</li>
+        <form>
+            <input type="checkbox" id="checkme" name="check me out">
+            <label for="check me">Check me out</label>
+            <fieldset>
+                <legend>Pick your Preferred Gun</legend> <br>
+                <input type="checkbox" id="Ak47" name="AK47" value="AK47">
+                <label for="Ak47">AK 47 rifle</label> <br>
+                <input type="checkbox" id="FNC" name="FNC" value="FNC">
+                <label for="FNC">FNC</label> <br>
+                <input type="checkbox" id="AK 12" name="Ak 12" value="AK 12">
+                <label for="Ak 12">AK 12 AUTO rifle</label> <br>
+                <input type="button" value="SUBMIT"/>
+            </fieldset>
+            <fieldset>
+                <legend>Pick your side arm</legend> <br>
+                <label>
+                    <input type="checkbox" id="Glock" 
+                    name="side arm" value="Glock"/> 
+                    Xlock
+                </label> <br>
+                <label>
+                    <input type="checkbox" id="Berreta" 
+                    name="side arm" value="Berretta"/>
+                    Berretta
+                </label> <br>
+                <label>
+                    <input type="checkbox" id="1911" 
+                    name="side arm" value="1911"/>
+                    1911
+                </label> <br>
+                <input type="button" value="SUBMIT">
+            </fieldset>
+        </form>
+<li>Color</li>
+<form action="color">
+    <input type="color" id="side arm" name="My side arm"> <br>
+    <fieldset>
+        <legend>Pick the color combination for your side arm</legend> 
+        <br>
+        <input type="color" id="magazine" name="magazine" value="body">
+        <label for="magazine">Magazine</label> <br>
+        <input type="color" id="body" name="body" value="body">
+        <label for="body"> Body</label> <br>
+        <input type="button" value="SUBMIT">        
+    </fieldset>
+</form>
+<li>Date</li>
+<form action="date">
+    <input type="date" value="2023-01-01">
+</form>
+<label for="Start date">When you want to start using your guns</label> 
+<br>
+<input type="date" id="start date" name="start date for my guns"
+ value="2023-10-23"
+ min="2023-01-01" max="2023-01-31">
+ <input type="button" value="SUBMIT"> <br>
+ <form>
+    <label for="Date for returning"> 
+        Select the date you will return your guns (required, April 1st to 30th ) <br>
+        <input type="date" value="pick your date"
+        name="date to return"
+        min="2023-04-01"
+        max="2023-04-31"
+        required/>
+        <br><button>SUBMIT</button> 
+    </label>
+ </form>
+ <li>Datetime-local</li>
+ <form action="">
+    <input type="datetime-local" name="Pick-up time" id="pick up time"> <br>
+        <label for=""> Time for Guns pick-up</label>
+    <input type="datetime-local" id="pick up time" name="pick up time"
+    min="2023-01-01T06:00"
+    max="2023-01-31T23:00">
+ </form>
+ <li>Email</li>
+ <form action="">
+    <input type="email" id="email address">
+    <p>for multiple emails</p>
+    <input type="email" id="email addresses" multiple/>
+    <input type="email" name="Email" 
+    id="email address" placeholder="your@email.com">
+    <input type="email" name="email" id="email" size="12">
+    <input type="email" name="email address" id="email" size="30" 
+    minlength="3" maxlength="12"> <br>
+    <input type="email" size="30" list="defaultEmails"/>
+    <datalist id="defaultEmails">
+        <option value="josephoyekanmi8@gmail.com"></option>
+        <option value="josephoyedele@gmail.com"></option>
+        <option value="zeddicus.concept@gmail.com"></option>
+    </datalist>
+    <input type="button" value="submit">
+     </form> <br>
+     <form action="">
+<div class="emailBox">
+    <label for="emailAdderess">Enter your Email</label><br>
+    <input type="email" name="email" id="emailAdderess"
+    size="30"
+    maxlength="45" required 
+    placeholder="user@zeddicusconcept.com"
+    pattern="+@zeddicusconcept\.com"
+    title="Please enter only Zeddicus Concept corporate email" />
+    </div>
+    <div class="messagebox">
+        <label for="message"> Request</label> <br/>
+        <textarea name="message" 
+        id="message" cols="90" rows="10" required
+        placeholder="My system is not working well with the latest Illustrator."></textarea>
+    </div>
+    <input type="submit" value="Send Complain">
+     </form>
+     <li>File</li>
+     <form action="">
+        <input type="file" name="avatar" id="avatar" accept="jpg" capture="img">
+        <a href="../index.html"><h3>Home</h3></a>
+     </form>
+</body>
